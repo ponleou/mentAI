@@ -114,8 +114,32 @@ model.compile(
     metrics=["accuracy"],
 )
 
-epochs = 3
+epochs = 50
 history = model.fit(train_ds, epochs=epochs, validation_data=val_ds)
 
 loss, acc = model.evaluate(test_ds)
 print("Loss: ", loss, "Accuracy: ", acc)
+
+
+def plot_graph(train, val, title):
+    epochs = range(1, len(train) + 1)
+    plt.plot(epochs, train, "b", label="Training " + title)
+    plt.plot(epochs, val, "y", label="Validation " + title)
+    plt.title(title)
+    plt.xlabel("Epochs")
+    plt.ylabel("Accuracy")
+    plt.legend(loc="upper right")
+    plt.show()
+
+
+train_acc = history.history["accuracy"]
+val_acc = history.history["val_accuracy"]
+plot_graph(train_acc, val_acc, "Accuracy")
+
+train_loss = history.history["loss"]
+val_loss = history.history["val_loss"]
+plot_graph(train_loss, val_loss, "Loss")
+
+model.save("model.h5")
+
+# model = tf.keras.models.load_model("model.h5")
