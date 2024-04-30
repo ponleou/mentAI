@@ -127,7 +127,7 @@ def plot_graph(train, val, title):
     plt.plot(epochs, val, "y", label="Validation " + title)
     plt.title(title)
     plt.xlabel("Epochs")
-    plt.ylabel("Accuracy")
+    plt.ylabel("title")
     plt.legend(loc="upper right")
     plt.show()
 
