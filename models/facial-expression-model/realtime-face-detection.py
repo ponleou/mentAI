@@ -39,7 +39,7 @@ while True:
     for x, y, w, h in faces:
         # frame_rgb_cropface = frame_rgb[y : y + h, x : x + w]
         frame_gray_cropface = frame_gray[y : y + h, x : x + w]
-        cv2.rectangle(frame, (x, y), (x + w, y + h), (0, 0, 0), 1)
+        cv2.rectangle(frame, (x, y), (x + w, y + h), (0, 255, 0), 1)
         # faces_2 = face_cascade.detectMultiScale(frame_rgb_cropface)
         faces_2 = face_cascade.detectMultiScale(frame_gray_cropface)
         if len(faces_2) == 0:
@@ -60,10 +60,21 @@ while True:
         cv2.putText(
             frame,
             labels[np.argmax(predictions)],
-            (100, 150),
+            (x, y - 20),
             cv2.FONT_HERSHEY_SIMPLEX,
-            3,
-            (0, 0, 0),
+            1,
+            (0, 255, 0),
+            2,
+            cv2.LINE_4,
+        )
+        cv2.putText(
+            frame,
+            "confidence: "
+            + str(round(predictions[0][np.argmax(predictions)] * 100, 2)),
+            (x, y + h + 20),
+            cv2.FONT_HERSHEY_SIMPLEX,
+            0.5,
+            (0, 255, 0),
             1,
             cv2.LINE_4,
         )
