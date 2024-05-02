@@ -19,3 +19,6 @@ The mentAI project is aim to aid the global issue of mental health and well bein
 4. Quality Education
 - Target 4.2: By 2030, ensure that all girls and boys have access to quality early childhood development, care and pre-primary education so that they are ready for primary education
 - Target 4.7: By 2030, ensure that all learners acquire the knowledge and skills needed to promote sustainable development, including, among others, through education for sustainable development and sustainable lifestyles, human rights, gender equality, promotion of a culture of peace and non-violence, global citizenship and appreciation of cultural diversity and of culture’s contribution to sustainable development
+
+## Deployment
+For self deployment, read [here](https://github.com/ponleou/mentAI/blob/main/PREQUISITES.md).
