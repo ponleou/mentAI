@@ -16,7 +16,7 @@ datasets_dir = "datasets/"
 # fe_dataset_dir = os.path.join(datasets_dir, "facial-expression-dataset")
 
 labels = ["angry", "disgust", "fear", "happy", "neutral", "sad", "surprise"]
-fe_dataset_dir = os.path.join(datasets_dir, "facial-expression-dataset2")
+fe_dataset_dir = os.path.join(datasets_dir, "FER2013")
 
 # img = cv2.imread(os.path)
 
