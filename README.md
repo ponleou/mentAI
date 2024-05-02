@@ -1,6 +1,6 @@
 <img src="https://github.com/ponleou/mentAI/assets/89851049/8b4b2608-e6d1-42b5-afde-be48e2613e0e" width=50%/>
 
-# mentAI | SIF Foundational Project
+# mentAI | SIF Foundational Programme Project
 
 ### The Mental Health Tracker with AI
 The mentAI project is aim to aid the global issue of mental health and well being. Our purpose is to develop a mental health tracker to diagnose user’s mental health, which can be used as a helping tool for users to track and improve their mental health. Our project plans to use computer vision for detecting facial expression and a chatbot to question and diagnose the user.
