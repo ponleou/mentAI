@@ -5,6 +5,13 @@
 ### The Mental Health Tracker with AI
 The mentAI project is aim to aid the global issue of mental health and well being. Our purpose is to develop a mental health tracker to diagnose user’s mental health, which can be used as a helping tool for users to track and improve their mental health. Our project plans to use computer vision for detecting facial expression and a chatbot to question and diagnose the user.
 
+### Contributors:
+- Ponleou Keo Sok
+- Irvan Masyur-Sutan
+- Ummu Hasna Lathifa
+- Sana Sajjad
+- Md Asirul Parwez
+
 ### Our Problem Statements:
 - **Mental Health Issues all time High:** There has been a significant increase in mental health issues and suicide rates in the last decade
 - **Stigma Surrounding Mental Health:** Stigma and misconceptions about mental illness persist, preventing individuals from seeking help and leading to discrimination and social exclusion.
